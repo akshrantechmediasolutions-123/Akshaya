@@ -534,6 +534,37 @@ window.addEventListener(
 
 });
 
+/* ================================= */
+/* HIDE NAVBAR ON SCROLL - MOBILE */
+/* ================================= */
+
+let lastScrollTop = 0;
+const navbar = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+
+    if (window.innerWidth <= 900) {
+
+        let currentScroll =
+            window.pageYOffset ||
+            document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop && currentScroll > 100) {
+
+            navbar.style.transform = "translateY(-100%)";
+
+        } else {
+
+            navbar.style.transform = "translateY(0)";
+
+        }
+
+        lastScrollTop = currentScroll;
+
+    }
+
+});
+
 /* RUN ON LOAD */
 
 revealCards();
