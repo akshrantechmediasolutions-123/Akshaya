@@ -822,6 +822,8 @@ header{
   left:0;
   z-index:1000;
 
+  transition: transform 0.4s ease;
+  
   padding:18px 8%;
 
   display:flex;
