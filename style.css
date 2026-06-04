@@ -2083,6 +2083,16 @@ footer{
     filter:blur(12px);
 }
 
+/* HIDE MENU ON MOBILE */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none !important;
+    }
+
+}
+
 /* MOBILE */
 
 @media(max-width:900px){
