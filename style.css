@@ -2093,6 +2093,12 @@ footer{
 
 }
 
+@media (max-width:900px){
+   .desktop-menu{
+      display:none !important;
+   }
+}
+
 /* MOBILE */
 
 @media(max-width:900px){
